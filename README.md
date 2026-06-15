@@ -1,12 +1,12 @@
 # Eigenvector Varieties
 
-Numerical computations supporting the paper Eigenvector Varieties, authored by Sandra Di Rocco, Bernd Sturmfels and Svala Sverrisdottir.
+Numerical computations supporting the paper Eigenvector Varieties, authored by Sandra Di Rocco, Bernd Sturmfels and Svala Sverrisdóttir.
 
 ## Notebooks
 
 ### [`dimTwoBodyEigenvectorVariety.ipynb`](dimTwoBodyEigenvectorVariety.ipynb)
 
-Computes the dimension of the eigenvector variety for the fermionic two-body operator $W$ acting on $\wedge^{k}\,\mathbb{C}^{m}$. The operator is parametrized by a complex $\binom{m}{2}\times\binom{m}{2}$ symmetric matrix $w$. The dimension equals $\operatorname{rank}(M(x)) - 1$, where $M(x)$ is the Jacobian of the eigenpair equations with respect to the parameters $w$.
+Computes the dimension of the eigenvector variety for the fermionic two-body operator $W$ acting on $\wedge^{k}\,\mathbb{C}^{m}$. The operator is parametrized by a complex $\binom{m}{2}\times\binom{m}{2}$ symmetric matrix $w$. The dimension equals $\mathrm{rank}(M(x)) - 1$, where $M(x)$ is the Jacobian of the eigenpair equations with respect to the parameters $w$.
 
 ### [`degreeLinearDeterminantalLocus.ipynb`](degreeLinearDeterminantalLocus.ipynb)
 
