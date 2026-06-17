@@ -10,11 +10,13 @@ Computes the dimension of the eigenvector variety for the fermionic two-body ope
 
 ### [`degreeLinearDeterminantalLocus.ipynb`](degreeLinearDeterminantalLocus.ipynb)
 
-For $(d,n)=(3,4)$ and general $ℋ$, the eigenvector variety $ℰ(ℋ)$ is a quartic surface in $ℙ^{3}$ with a $4\times 4$ linear determinantal representation
+For generic $ℋ$, the eigenvector variety $ℰ(ℋ)$ is a degree-$n$ hypersurface in $ℙ^{n-1}$ with the $n\times n$ linear determinantal representation
 
-$$f(x,y,z,w) = \det\bigl[A X \mid B X \mid C X \mid X\bigr], \qquad A,B,C\in ℂ^{4\times 4}.$$
+$$f(x_1,\dots,x_n) = \det\bigl[H_1\, x \mid \cdots \mid H_d\, x \mid x\bigr], \qquad H_1,\dots,H_d\in ℂ^{n\times n},\quad d=n-1.$$
 
-This notebook numerically verifies, via monodromy in `HomotopyContinuation.jl`, that the locus of such quartics is an irreducible hypersurface in $ℙ^{34}$ of degree $320{,}112$. This value was first obtained in Leal–Lozano Huerta–Vite ([arXiv:2303.09028](https://arxiv.org/abs/2303.09028), Theorem 2) via intersection theory.
+Let $ℒ$ denote the locus of generic eigenvector varieties — the Zariski closure of these $f$ inside $ℙ^{\binom{2n-1}{n}-1}$. By Corollary 2.5 in our paper, $\dim ℒ = n^3 - 2n^2 + 1$ for $n\ge 4$. This notebook verifies $\dim ℒ$ numerically and computes $\deg ℒ$ via monodromy in `HomotopyContinuation.jl`.
+
+The default case $(d,n)=(3,4)$ is the locus $ℱ_1$ defined in Leal–Lozano Huerta–Vite ([arXiv:2303.09028](https://arxiv.org/abs/2303.09028)), where it is shown to be an irreducible hypersurface in $ℙ^{34}$ of degree $320{,}112$ (Theorem 2, via intersection theory). The notebook reproduces this number numerically.
 
 ## Running
 
